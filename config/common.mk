@@ -3,19 +3,6 @@ LEMON_VERSION := Pie
 
 LEMON_DISPLAY_VERSION := Lemon$(LEMON_VERSION)
 
-# AOSP packages
-PRODUCT_PACKAGES += \
-    messaging \
-    Terminal
-
-# LineageOS apps
-PRODUCT_PACKAGES += \
-    Eleven
-
-# Overlays
-PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/lemon/overlay/common
-
 # Include explicitly to work around GMS issues
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full \
